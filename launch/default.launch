@@ -5,7 +5,7 @@
         <!-- Directory containing configuration files for the bag launcher to read -->
         <param name="configuration_directory"   type="string"       value="$(find bag_recorder)/config"/>
         <!-- Directory for the bags to be recorded to -->
-        <param name="data_directory"            type="string"       value="/home/parallels/data/"/>
+        <param name="data_directory"            type="string"       value="/home/main/rosbag/"/>
         <!-- Topic for bag launcher to listen to for launching bags -->
         <param name="start_bag_topic"           type="string"       value="/record/start"/>
         <!-- Topic for bag launcher to listen to for stopping bags -->
@@ -15,7 +15,7 @@
         <!-- Topic to publish bag name to if publish_name is true -->
         <param name="name_topic"                type="string"       value="/record/bag_name"/>
         <!-- Boolean whether or not a heartbeat is published for each bag -->
-        <param name="publish_heartbeat"         type="bool"         value="true"/>
+        <param name="publish_heartbeat"         type="bool"         value="false"/>
         <!-- Topic to publish heartbeat to -->
         <param name="heartbeat_topic"           type="string"       value="/record/heartbeat"/>
         <!-- Interval in seconds on which to publish bag heartbeats -->

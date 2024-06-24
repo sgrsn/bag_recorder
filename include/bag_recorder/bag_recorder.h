@@ -70,7 +70,7 @@ namespace bag_recorder {
     {
         public:
             //initializes the BagRecorder
-            BagRecorder(std::string data_folder, bool append_date = true);
+            BagRecorder(std::string data_folder, bool append_date = false);
             ~BagRecorder();
 
             // flow control function - sets flags, starts threads, starts/kills subscribers
